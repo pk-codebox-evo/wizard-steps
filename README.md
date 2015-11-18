@@ -20,9 +20,37 @@ Or grab the [source](https://github.com/trungdq88/wizard-steps/dist/wizard-steps
 
 Basic usage is as follows:
 
-    wizard-steps();
+HTML:
 
-For advanced usage, see the documentation.
+
+    <div id="wizard-steps" class="wizard-steps">
+      <div class="wizard-step active">
+        One
+      </div>
+      <div class="wizard-step">
+        Two very long long text over here
+      </div>
+      <div class="wizard-step">
+        Three
+      </div>
+      <div class="wizard-step">
+        Four
+      </div>
+      <div class="wizard-step">
+        Five
+      </div>
+    </div>
+
+
+JavaScript:
+
+    WizardStep('#element-id')
+
+How it looks like:
+
+<img src="screenshot.png"/>
+
+Check `/demo` page for more information
 
 ## Documentation
 
@@ -30,13 +58,7 @@ Start with `docs/MAIN.md`.
 
 ## Contributing
 
-We'll check out your contribution if you:
-
-* Provide a comprehensive suite of tests for your fork.
-* Have a clear and documented rationale for your changes.
-* Package these up in a pull request.
-
-We'll do our best to help you out with any contribution issues you may have.
+I welcome all pull requests
 
 ## License
 
