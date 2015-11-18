@@ -1,0 +1,113 @@
+.wizard-steps {
+  border-bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.wizard-step {
+  padding: 7px 7px 7px 20px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #A9A9A9;
+  position: relative;
+  border: 1px solid #ccc;
+  border-right: 0;
+  border-left: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.wizard-step:hover {
+  background: #f7f7f7;
+}
+.wizard-step:hover:after {
+  border-left: 10px solid #f7f7f7;
+}
+.wizard-step.done {
+  border-color: #00aae5;
+  color: #00aae5;
+  font-weight: bold;
+  box-shadow: 1px 0 0 1px inset;
+}
+.wizard-step.done:before {
+  border-left-color: #00aae5;
+}
+.wizard-step.done:after {
+  right: -9px;
+  top: 1px;
+  border-top-width: 16px;
+  border-left-width: 9px;
+  border-bottom-width: 16px;
+}
+.wizard-step.active {
+  background: #00aae5;
+  color: white;
+  font-weight: bold;
+}
+.wizard-step:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 1px;
+  top: -1px;
+  border-top: 18px solid transparent;
+  border-left: 10px solid #ccc;
+  border-bottom: 18px solid transparent;
+  z-index: 1;
+}
+.wizard-step:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -10px;
+  top: -1px;
+  border-top: 18px solid transparent;
+  border-left: 10px solid #FFFFFF;
+  border-bottom: 18px solid transparent;
+  z-index: 2;
+}
+.wizard-step.active {
+  border: 1px solid #00aae5;
+}
+.wizard-step.active:after {
+  border-left: 10px solid #00aae5;
+}
+.wizard-step.active + .wizard-step:before {
+  display: none;
+}
+.wizard-step.active:before {
+  display: none;
+}
+.wizard-step.active:hover {
+  background: #00b6f4;
+}
+.wizard-step.active:hover:after {
+  border-left: 10px solid #00b6f4;
+}
+.wizard-step:first-child {
+  border-left: 1px solid #ccc;
+}
+.wizard-step:first-child.done {
+  border-color: #00aae5;
+}
+.wizard-step:first-child:before {
+  display: none;
+}
+.wizard-step:first-child.active {
+  border-left: 0;
+}
+.wizard-step:last-child {
+  border-right: 1px solid #ccc;
+}
+.wizard-step:last-child.done {
+  border-color: #00aae5;
+}
+.wizard-step:last-child:after {
+  display: none;
+}
+.wizard-step:last-child.active {
+  border-right: 0;
+}

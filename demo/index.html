@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>wizard-steps demo</title>
+  <link rel="stylesheet" href="./assets/normalize.css"/>
+  <link rel="stylesheet" href="./assets/main.css"/>
+  <link rel="stylesheet" href="../dist/css/wizard-steps.css"/>
+  <style>
+    /* begin demo embedded styles */
+
+    /* end demo embedded styles */
+  </style>
+</head>
+<body>
+<h1>wizard-steps demo</h1>
+
+<!-- begin demo markup -->
+
+<div style="width: 700px; margin: 0 auto;">
+  <div id="wizard-steps" class="wizard-steps">
+    <div class="wizard-step active">
+      One
+    </div>
+    <div class="wizard-step">
+      Two very long long text over here
+    </div>
+    <div class="wizard-step">
+      Three
+    </div>
+    <div class="wizard-step">
+      Four
+    </div>
+    <div class="wizard-step">
+      Five
+    </div>
+  </div>
+</div>
+
+<!-- end demo markup -->
+
+<p>See the <a href="http://trungdq88.github.io/wizard-steps">project homepage</a>.
+
+<p>Check out the <a href="https://github.com/trungdq88/wizard-steps">project repo</a>.
+
+<p>Copyright 2015 Trung Dinh Quang</p>
+
+<script src="./../dist/js/wizard-steps.js"></script>
+
+<script>
+  /* begin demo script */
+
+  WizardSteps('#wizard-steps');
+
+  /* end demo script */
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "wizard-steps",
+  "version": "0.0.0",
+  "main": "dist/wizard-steps.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {}
+}
