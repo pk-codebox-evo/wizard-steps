@@ -56,6 +56,13 @@ Check `/demo` page for more information
 
 Start with `docs/MAIN.md`.
 
+## TODO
+
+- [x] No more jQuery
+- [ ] Fix arrow size
+- [ ] Allow multiple lines for each step item (dynamic height)
+- [ ] Provide callbacks
+
 ## Contributing
 
 I welcome all pull requests
